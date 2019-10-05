@@ -1,0 +1,18 @@
+var my_div = document.getElementById("div1");
+window.alert("the"+my_div.title);
+var inner_div = document.createElement("div");
+var inner_div_text = document.createTextNode("See you!");
+inner_div.appendChild(inner_div_text);
+inner_div.id = "div2";
+inner_div.title = "Lucky";
+var inner_div1 = document.createElement("div");
+var inner_div1_text = document.createTextNode("Good Bye!");
+inner_div1.appendChild(inner_div1_text);
+inner_div1.id = "div23";
+inner_div1.title = "Hello Kity";
+my_div.appendChild(inner_div);
+my_div.appendChild(inner_div1);
+var my_div1 = document.getElementById('div1').firstElementChild;
+window.alert(my_div1.id+" "+my_div1.title);
+var my_div2 = document.getElementById('div1').lastChild;
+window.alert(my_div2.id+" "+my_div2.title);
